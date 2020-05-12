@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Validador CPF - Hiring Coders</title>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Favicon -->
+  <link rel="icon" href="./assets/img/favicon.ico" type="ico">
+  <!-- CSS local -->
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <div class="jumbotron">
+    <span class="mask bg-gradient opacity-4"></span>
+    <div class="container">
+      <h1 class="page-header">Validador de CPF</h1>
+      <p>Através deste simples algoritmo, veremos diversos recursos e habilidades da linguagem Javascript</p>
+    </div>
+  </div>
+  <div class="main">
+    <div class="container formulario">
+      <form>
+        <div class="form-group">
+          <div class="input-group input-group-lg">
+            <span class="input-group-addon" id="sizing-addon1">CPF</span>
+            <input type="text" class="form-control" placeholder="Digite o CPF para validação ..."
+              aria-describedby="sizing-addon1" id="cpf_digitado">
+          </div>
+          <small class="form-text text-muted">Digite somente números</small>
+        </div>
+        <button type="button" class="btn btn-success pull-right" onclick="validacao()">Validar!</button>
+        <button type="reset" class="btn btn-danger pull-right" onclick="document.location.reload()"
+          style="margin-right: 5px;">Limpar</button>
+      </form>
+    </div>
+    <div class="container page-header">
+      <div id="success" class="alert alert-success" style="display: none;" role="alert">
+        <strong>Oba!</strong> Seu CPF é válido.
+      </div>
+      <div id="error" class="alert alert-danger" style="display: none;" role="alert">
+        <strong>Ops!</strong> Seu CPF não é válido.
+      </div>
+    </div>
+  </div>
+
+  <footer id="footer-main">
+    <div class="container">
+      <div class="space-1">
+        <div class="row align-items-md-center mb-7">
+          <div class="col-md-6 mb-4 mb-md-0">
+            <div class="nav nav-sm nav-white nav-x-sm align-items-center" id="copyright">
+              © 2020 &nbsp; Feito com ❤ por &nbsp;<a href="https://www.linkedin.com/in/sergiomirandaleitao/" class="nav-item"
+                id="meunome" target="_blank">Sérgio Leitão</a>&nbsp;&nbsp;|&nbsp;&nbsp;Hiring Coders by <a class="nav-link" href="https://gama.academy/" target="_blank">
+                  <img src="assets/img/logo-gama-academy.png" alt="Gama Academy Logo" title="Gama Academy" style="width: 32px; height: 32px;">
+                </a>
+            </div>
+          </div>
+          <div class="col-md-6 text-md-right">
+            <ul class="list-inline mb-0" id="social">
+              <!-- Social Networks -->
+              <li class="list-inline-item">
+                <a class="nav-link" href="https://github.com/seralterego" target="_blank">
+                  <img src="./assets/img/github-icon.png" alt="GitHub Link" title="Códigos no GitHub" style="width: 32px; height: 32px;">
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a class="nav-link" href="https://www.linkedin.com/in/data-quantica/" target="_blank">
+                  <img src="./assets/img/linkedin.png" alt="LinkedIn Link" title="Negócios no LinkedIn" style="width: 32px; height: 32px;">
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a class="nav-link" href="https://twitter.com/seralterego" target="_blank">
+                  <img src="./assets/img/twitter.png" alt="Twitter Link" title="Pensamentos no Twitter" style="width: 32px; height: 32px;">
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a class="btn btn-xs btn-icon btn-soft-light" href="https://www.facebook.com/sergio.mleitao" target="_blank">
+                  <img src="./assets/img/facebook.png" alt="Facebook Link" title="Social no Facebook" style="width: 32px; height: 32px;">
+                </a>
+              </li>
+              <!-- End Social Networks -->
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" crossorigin="anonymous"
+  integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"></script>
+<!-- Script local -->
+<script src="script.js"></script>
+</html>

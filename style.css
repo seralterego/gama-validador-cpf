@@ -1,0 +1,92 @@
+@import url(https://fonts.googleapis.com/css?family=Nunito:300,400,600,700);
+
+body {
+  font-family: Nunito, sans-serif;
+  height: auto;
+}
+
+.jumbotron {
+  background: linear-gradient(50deg,#4b8eec,#00d4ff);
+  background-image: url(./assets/img/bg.jpg);
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: .8;
+  -webkit-transition: all .2s ease;
+  -o-transition: all .2s ease;
+  transition: all .2s ease;
+}
+
+.jumbotron h1 {
+  color: white;
+  font-weight: bold;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #000;
+  z-index: 9999999 !important;
+}
+
+h1 {
+  font-size: 48px;
+}
+
+.jumbotron p {
+  color: #000;
+  font-weight: bold;
+}
+
+.main {
+  height: 100%;
+}
+
+.formulario {
+  margin-top: 5% !important;
+  margin: 0 auto;
+}
+
+#footer-main {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #476cbd;
+  color: white;
+}
+
+#meunome,
+#meunome:hover {
+  color: white;
+  text-decoration: none;
+}
+
+#copyright {
+  margin-top: 10px;
+}
+
+#social {
+  display: inline-flex;
+  margin-top: 10px;
+}
+
+@media (min-width: 992px) {
+  #copyright {
+    padding: 30px 0;
+  }
+
+  #social {
+    display: inline-flex;
+    padding: 20px 0 0 0;
+  }
+
+  #social {
+    float: right !important;
+  }
+}
+
+#social a:hover {
+  background-color: transparent;
+}
+
+.nav>li>a:focus,
+.nav>li>a:hover {
+  background-color: transparent;
+}
